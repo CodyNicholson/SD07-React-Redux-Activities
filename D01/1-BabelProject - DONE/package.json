@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "babel-preset-env": "^1.7.0"
+  }
+}

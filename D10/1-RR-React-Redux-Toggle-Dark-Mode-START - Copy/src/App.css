@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.ContentWrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.Footer,
+.buffer {
+  height: 50px;
+}
+
+.NavLink {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  width: 10vw;
+}
+
+.Photo {
+  float: right;
+}

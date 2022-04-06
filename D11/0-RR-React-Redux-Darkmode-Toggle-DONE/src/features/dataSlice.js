@@ -18,7 +18,8 @@ export const dataSlice = createSlice({
         inputId: (state, action) => {
             return { ...state, objectId: action.payload }
         },
-        incrementId: (state) => {
+        incrementId: (state, action) => {
+            console.log(action.payload);
             return { ...state, objectId: state.objectId + 1 }
         },
         decrementId: (state) => {

@@ -17,14 +17,14 @@ function App(props) {
 
   useEffect(() => {
     dispatch(fetchData())
-  }, [props.objectId, dispatch])
+  }, [data.objectId, dispatch])
 
   return (
     <div className="App">
       <div>
         <button onClick={() => dispatch(fetchData())}>Thunk!</button>
         <button onClick={() => dispatch(clearData())}>Clear</button>
-        <button onClick={() => dispatch(incrementId())}>Next</button>
+        <button onClick={() => dispatch(incrementId("Hello World"))}>Next</button>
         <button onClick={() => dispatch(decrementId())}>Back</button>
       </div>
       <input value={ data.objectId } onChange={(e) => {

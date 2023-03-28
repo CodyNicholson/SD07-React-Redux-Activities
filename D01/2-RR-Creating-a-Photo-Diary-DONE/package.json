@@ -1,0 +1,19 @@
+{
+  "name": "7.1.2-activity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "open": "^7.1.0"
+  }
+}

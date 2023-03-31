@@ -1,5 +1,7 @@
-const fetchSearch = (searchTerm) => {
-    return fetch(`http://localhost:4000/main/${searchTerm}`)
+const fetchSearch = (searchTerm, path) => {
+    
+    //Solution with CNicholson on 3/29/23
+    return fetch(`http://localhost:4000/artist/${searchTerm}`)
     .then(response => response.json())
     .then(resData => resData.results)
 }
@@ -26,8 +28,8 @@ const wrapPromise = (promise) => {
     }
 }
 
-export const createResource = (searchTerm) => {
+export const createResource = (searchTerm, path) => {
     return {
-        result: wrapPromise(fetchSearch(searchTerm))
+        result: wrapPromise(fetchSearch(searchTerm, path))
     }
 }

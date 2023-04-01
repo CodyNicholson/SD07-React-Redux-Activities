@@ -1,7 +1,6 @@
 const fetchSearch = (searchTerm, path) => {
     
-    //Solution with CNicholson on 3/29/23
-    return fetch(`http://localhost:4000/artist/${searchTerm}`)
+    return fetch(`http://localhost:4000/main/${searchTerm}`)
     .then(response => response.json())
     .then(resData => resData.results)
 }

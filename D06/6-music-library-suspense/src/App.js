@@ -17,7 +17,7 @@ const App = () => {
 
 	const handleSearch = (e, term) => {
 		e.preventDefault()
-		setData(fetchData(term, 'album'))
+		setData(fetchData(term))
 	}
 
 	const renderGallery = () => {

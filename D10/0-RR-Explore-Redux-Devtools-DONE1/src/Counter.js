@@ -25,6 +25,7 @@ function Counter() {
                 onClick={() => dispatch(decrement())}>
                 Decrement
             </button>
+            <h3>Increment By Amount</h3>
             <form onSubmit={(e) => byAmount(e)}>
                 <input type="number" onChange={(e) => setInput(e.target.value)} />
                 <button type="submit">Submit</button>

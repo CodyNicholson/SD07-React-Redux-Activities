@@ -1,0 +1,27 @@
+#container {
+    border: 4px solid
+  }
+  
+  .moving-part {
+    width: 20%;
+    margin: 5%;
+    background-color: orange;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  #moving-part-one {
+    transition: margin-left 5s;
+  }
+  
+  body:hover #moving-part-one {
+    margin-left: 70%;
+  }
+  
+  #moving-part-two {
+    transition: transform 5s;
+  }
+  
+  body:hover #moving-part-two {
+    transform: translate(250%) 
+  }

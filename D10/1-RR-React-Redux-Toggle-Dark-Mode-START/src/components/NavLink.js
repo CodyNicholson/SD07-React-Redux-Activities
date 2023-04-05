@@ -1,11 +1,9 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
 
 function NavLink(props) {
-    const mode = useSelector((state) => state.mode)
 
     return (
-        <div className="NavLink" style={{'backgroundColor': mode.color4}}>
+        <div className="NavLink" style={{'backgroundColor': 'white'}}>
             <p>{props.content}</p>
         </div>
     )
